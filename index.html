@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ariefin</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: #e2e8f0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(14px);
+            border-radius: 20px;
+            padding: 48px 36px;
+            text-align: center;
+            width: 90%;
+            max-width: 560px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .avatar {
+            font-size: 84px;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #cbd5f5;
+            margin-bottom: 28px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 6px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.25s ease;
+        }
+
+        .social a:hover {
+            background: #38bdf8;
+            color: #020617;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body::before,
+        body::after {
+            content: "";
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            filter: blur(120px);
+            opacity: 0.15;
+            animation: float 10s infinite alternate ease-in-out;
+        }
+
+        body::before {
+            background: #38bdf8;
+            top: 10%;
+            left: 10%;
+        }
+
+        body::after {
+            background: #6366f1;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(50px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="avatar">👨‍💻</div>
+
+        <h1>Muhammad Ariefin</h1>
+        <div class="subtitle">Language • Education • Technology • Creativity</div>
+
+        <p>
+            I work at the intersection of language, education, technology, and creativity, 
+            shaping how people learn in a rapidly evolving digital world. 
+            I design learning strategies and create meaningful educational content.
+        </p>
+
+        <div class="social">
+            <!-- GANTI LINK DI BAWAH INI -->
+            <a href="https://instagram.com/muhariefin" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://youtube.com/@muhariefin" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://linkedin.com/in/muhariefin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="footer">
+            © 2026 Muhammad Ariefin
+        </div>
+    </div>
+
+</body>
+</html>
